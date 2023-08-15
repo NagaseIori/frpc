@@ -71,6 +71,8 @@ elif [ $(uname -m) = "armv7l" ]; then
     PLATFORM=arm
 elif [ $(uname -m) = "armhf" ]; then
     PLATFORM=arm
+elif [ $(uname -m) = "riscv64" ]; then
+    PLATFORM=riscv64
 fi
 
 FILE_NAME=frp_${FRP_VERSION}_linux_${PLATFORM}
